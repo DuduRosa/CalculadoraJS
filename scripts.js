@@ -66,7 +66,33 @@ function Fbtn0() {
     var tela = window.document.getElementById('tela').value = telaValor + 0;
 }
 
-function somar() {
+function operacao(valor) {
+
+    if (valor == '+') {
+        var telaValor = window.document.getElementById('tela').value;
+        var telaFake = window.document.getElementById('telaFake').value = telaValor;
+        var telaOperador = window.document.getElementById('telaOperador').value = '+';
+        var telaValor = window.document.getElementById('tela').value = '';
+    } else if (valor == '-') {
+        var telaValor = window.document.getElementById('tela').value;
+        var telaFake = window.document.getElementById('telaFake').value = telaValor;
+        var telaOperador = window.document.getElementById('telaOperador').value = '-';
+        var telaValor = window.document.getElementById('tela').value = '';
+    } else if (valor == '/') {
+        var telaValor = window.document.getElementById('tela').value;
+        var telaFake = window.document.getElementById('telaFake').value = telaValor;
+        var telaOperador = window.document.getElementById('telaOperador').value = '/';
+        var telaValor = window.document.getElementById('tela').value = '';
+    } else if (valor == '*') {
+        var telaValor = window.document.getElementById('tela').value;
+        var telaFake = window.document.getElementById('telaFake').value = telaValor;
+        var telaOperador = window.document.getElementById('telaOperador').value = '*';
+        var telaValor = window.document.getElementById('tela').value = '';
+    }
+
+}
+
+/*function somar() {
     var telaValor = window.document.getElementById('tela').value;
     var telaFake = window.document.getElementById('telaFake').value = telaValor;
     var telaOperador = window.document.getElementById('telaOperador').value = '+';
@@ -93,6 +119,7 @@ function multiplicar() {
     var telaOperador = window.document.getElementById('telaOperador').value = '*';
     var telaValor = window.document.getElementById('tela').value = '';
 }
+*/
 
 function ce() {
     var telaValor = window.document.getElementById('tela').value = '';
